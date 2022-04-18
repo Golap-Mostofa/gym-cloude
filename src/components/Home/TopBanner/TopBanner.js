@@ -8,11 +8,11 @@ import services6 from '../../../img/serviceImg/services6.jpg'
 import Product from '../Product/Product';
 
 const data = [
-    { name: "Fitness Heroes", deatil: ' Many reasons to go to gym. Of course exercise is priority. The gym has plenty exercise machines that people can use to develop different muscle groups. Kulas (para. 1) in her article,', price: 20, id: 1, img: services1 },
-    { name: "Sculpting Studio", deatil: ' Many reasons to go to gym. Of course exercise is priority. The gym has plenty exercise machines that people can use to develop different muscle groups. Kulas (para. 1) in her article,', price: 20, id: 2, img: services2 },
-    { name: "Strength Center.", deatil: ' Many reasons to go to gym. Of course exercise is priority. The gym has plenty exercise machines that people can use to develop different muscle groups. Kulas (para. 1) in her article,', price: 20, id: 3, img: services3 },
-    { name: "Pump House", deatil: 'Many reasons to go to gym. Of course exercise is priority. The gym has plenty exercise machines that people can use to develop different muscle groups. Kulas (para. 1) in her article,', price: 20, id: 4, img: services4 },
-    { name: "Strength Center.", deatil: ' Many reasons to go to gym. Of course exercise is priority. The gym has plenty exercise machines that people can use to develop different muscle groups. Kulas (para. 1) in her article,', price: 20, id: 5, img: services5 },
+    { name: "Fitness Heroes", deatil: ' Many reasons to go to gym. Of course exercise is priority. The gym has plenty exercise machines that people can use to develop different muscle groups. Kulas (para. 1) in her article,', price: 20.5, id: 1, img: services1 },
+    { name: "Sculpting Studio", deatil: ' Many reasons to go to gym. Of course exercise is priority. The gym has plenty exercise machines that people can use to develop different muscle groups. Kulas (para. 1) in her article,', price: 22.6, id: 2, img: services2 },
+    { name: "Strength Center.", deatil: ' Many reasons to go to gym. Of course exercise is priority. The gym has plenty exercise machines that people can use to develop different muscle groups. Kulas (para. 1) in her article,', price: 10.99, id: 3, img: services3 },
+    { name: "Pump House", deatil: 'Many reasons to go to gym. Of course exercise is priority. The gym has plenty exercise machines that people can use to develop different muscle groups. Kulas (para. 1) in her article,', price: 20.09, id: 4, img: services4 },
+    { name: "Strength Center.", deatil: ' Many reasons to go to gym. Of course exercise is priority. The gym has plenty exercise machines that people can use to develop different muscle groups. Kulas (para. 1) in her article,', price: 21.14, id: 5, img: services5 },
     { name: " Muscle Studio", deatil: ' Many reasons to go to gym. Of course exercise is priority. The gym has plenty exercise machines that people can use to develop different muscle groups. Kulas (para. 1) in her article,', price: 20, id: 6, img: services6 }
 ]
 
