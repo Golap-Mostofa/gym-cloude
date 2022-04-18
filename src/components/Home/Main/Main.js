@@ -1,7 +1,7 @@
 
 import React from 'react';
 import TopBanner from '../TopBanner/TopBanner';
-import banner from '../../../img/banner.jpg'
+import banner from '../../../img/banner_48 .jpg'
 const Main = () => {
     return (
         <div>
