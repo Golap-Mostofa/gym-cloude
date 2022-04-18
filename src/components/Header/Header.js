@@ -1,8 +1,15 @@
+import { signOut } from 'firebase/auth';
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
+import auth from '../Firebase.init';
 import './Header.css'
 const Header = () => {
+    const [user] =useAuthState(auth)
+    const hendelSignOut = ()=>{
+        signOut(auth)
+    }
     return (
 
         <div className='sticky-top'>
@@ -13,31 +20,11 @@ const Header = () => {
                 </div>
                 <div className='d-flex font-weight-bold'>
                     <Link className='text-decoration-none text-white me-5 font-weight-bold' to='/'>Home</Link>
-                    <Link className='text-decoration-none text-white me-5 font-weight-bold' to='/Login'>Login</Link>
-                    <Link className='text-decoration-none text-white me-5 font-weight-bold' to='/signup'>SignUp</Link>
-
-                    {/* {
-                    user ?
-                    <button onClick={handleSignOut}>Sign out</button>
-                    :
-                    <Link to="/login">Login</Link>} */}
-
-                    {/* <div >
-
-<nav className='d-flex bg-dark justify-content-around'>
-    <div className="nav-logo">
-        <h4>Hello</h4>
-    </div>
-    <div className="nav-link d-flex">
-    <Link to={'/'}>home</Link>
-    <Link to={'/'}>home</Link>
-    <Link to={'/login'}>Login</Link>
-    <Link to={'/signup'}>SignUp</Link>
-
-    </div>
-</nav>
-    
-</div> */}
+                {user ?
+                // <Link className='text-decoration-none text-white me-5 font-weight-bold' to='/signup'>LogOut</Link>
+               <button onClick={hendelSignOut}>Sign Out</button>
+                :
+                <Link className='text-decoration-none text-white me-5 font-weight-bold' to='/Login'>Login</Link>}
 
                     <div>
                     </div>

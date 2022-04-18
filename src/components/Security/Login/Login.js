@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../Firebase.init';
 import './Login.css'
 const Login = () => {
@@ -10,14 +10,15 @@ const Login = () => {
     const [e,setE] = useState('')
     const navitate = useNavigate()
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
-
+   
     const [
         signInWithEmailAndPassword,
         user1,
         lode,
         err,
       ] = useSignInWithEmailAndPassword(auth);
-
+      const location = useLocation()
+      const from = location.state?.from?.pathname || '/'
     const hendelEmail = e =>{
         setEmail(e.target.value)
     }
@@ -32,7 +33,7 @@ const Login = () => {
 
     if(user1){
 
-        navitate('/')
+        navitate(from,{replace: true})
     }
 
     return (
