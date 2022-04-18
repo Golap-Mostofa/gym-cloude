@@ -11,6 +11,8 @@ import ShoData from './components/ShoData/ShoData';
 import RequAuth from './components/RequAuth/RequAuth';
 import Blogs from './components/Blogs/Blogs';
 import About from './components/About/About';
+import NoteFound from './components/NoteFound/NoteFound';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -30,7 +32,9 @@ function App() {
        <Route path='blogs' element={<Blogs></Blogs>}></Route>
        <Route path='/login' element={<Login></Login>}></Route>
        <Route path='/signup' element={<SignUp></SignUp>}></Route>
+       <Route path='/*' element={<NoteFound></NoteFound>}></Route>
      </Routes>
+     <Footer></Footer>
     </div>
   );
 }
