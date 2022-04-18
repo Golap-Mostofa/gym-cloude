@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# ** ThePowder - Vediva **
 
 This project was bootstrapped with [The Powder - Vediva](https://serene-douhua-81adb1.netlify.app/).
 
