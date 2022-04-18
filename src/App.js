@@ -6,6 +6,7 @@ import Main from './components/Home/Main/Main';
 import TopBanner from './components/Home/TopBanner/TopBanner';
 import Login from './components/Security/Login/Login';
 import SignUp from './components/Security/SignUp/SignUp';
+import ShowAll from './components/ShowAll/ShowAll';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
      <Header></Header>
      <Routes>
        <Route path='/' element={<Main></Main>}></Route>
-       
+       <Route path='/showall/:svid' element={<ShowAll></ShowAll>}></Route>
        <Route path='/' element={<TopBanner></TopBanner>}></Route>
        <Route path='/login' element={<Login></Login>}></Route>
        <Route path='/signup' element={<SignUp></SignUp>}></Route>
