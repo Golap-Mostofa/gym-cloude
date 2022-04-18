@@ -5,6 +5,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import auth from '../Firebase.init';
 import './Header.css'
+import logo from '../../img/logo.png'
 const Header = () => {
     const [user] =useAuthState(auth)
     const hendelSignOut = ()=>{
@@ -14,14 +15,15 @@ const Header = () => {
 
         <div className='sticky-top'>
             <nav className='d-flex justify-content-between align-content-center  p-2  nav-color'>
-                <div>
-                    <img style={{ height: '50px' }} className='ms-3' src='' alt="" />
-                    <h4>Logo</h4>
+                <div className='d-flex justify-content-evenly align-items-center me-3'>
+                    <img style={{ height: '50px' }} className='ms-3 me-3' src={logo} alt="" />
+                    <h4 className='text-success'>Powder - Vediva</h4>
                 </div>
                 <div className='d-flex font-weight-bold'>
                     <Link className='text-decoration-none text-white me-5 font-weight-bold' to='/'>Home</Link>
+                    <Link className='text-decoration-none text-white me-5 font-weight-bold' to='/'>about</Link>
                 {user ?
-                // <Link className='text-decoration-none text-white me-5 font-weight-bold' to='/signup'>LogOut</Link>
+                
                <button onClick={hendelSignOut}>Sign Out</button>
                 :
                 <Link className='text-decoration-none text-white me-5 font-weight-bold' to='/Login'>Login</Link>}

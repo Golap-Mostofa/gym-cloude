@@ -8,18 +8,18 @@ import services6 from '../../../img/serviceImg/services6.jpg'
 import Product from '../Product/Product';
 
 const data = [
-    { name: "pasta", deatil: ' Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, impedit!', price: 20, id: 1, img: services1 },
-    { name: "tomato", deatil: ' Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, impedit!', price: 20, id: 2, img: services2 },
-    { name: "barger", deatil: ' Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, impedit!', price: 20, id: 3, img: services3 },
-    { name: "biriyani", deatil: ' Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, impedit!', price: 20, id: 4, img: services4 },
-    { name: "kalavuna", deatil: ' Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, impedit!', price: 20, id: 5, img: services5 },
-    { name: "chicen", deatil: ' Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, impedit!', price: 20, id: 6, img: services6 }
+    { name: "Fitness Heroes", deatil: ' Many reasons to go to gym. Of course exercise is priority. The gym has plenty exercise machines that people can use to develop different muscle groups. Kulas (para. 1) in her article,', price: 20, id: 1, img: services1 },
+    { name: "Sculpting Studio", deatil: ' Many reasons to go to gym. Of course exercise is priority. The gym has plenty exercise machines that people can use to develop different muscle groups. Kulas (para. 1) in her article,', price: 20, id: 2, img: services2 },
+    { name: "Strength Center.", deatil: ' Many reasons to go to gym. Of course exercise is priority. The gym has plenty exercise machines that people can use to develop different muscle groups. Kulas (para. 1) in her article,', price: 20, id: 3, img: services3 },
+    { name: "Pump House", deatil: 'Many reasons to go to gym. Of course exercise is priority. The gym has plenty exercise machines that people can use to develop different muscle groups. Kulas (para. 1) in her article,', price: 20, id: 4, img: services4 },
+    { name: "Strength Center.", deatil: ' Many reasons to go to gym. Of course exercise is priority. The gym has plenty exercise machines that people can use to develop different muscle groups. Kulas (para. 1) in her article,', price: 20, id: 5, img: services5 },
+    { name: " Muscle Studio", deatil: ' Many reasons to go to gym. Of course exercise is priority. The gym has plenty exercise machines that people can use to develop different muscle groups. Kulas (para. 1) in her article,', price: 20, id: 6, img: services6 }
 ]
 
 const TopBanner = () => {
     return (
         <div className='mt-5'>
-            <h1 className='text-center text-success'>The JYM System simplifies</h1>
+            <h1 className='text-center text-success '>The JYM System simplifies</h1>
             <div className='row p-4'>
                 {
                     data.map(product => <Product

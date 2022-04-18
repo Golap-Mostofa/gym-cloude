@@ -3,7 +3,8 @@ import { Link, useNavigate } from 'react-router-dom';
 import './SignUp.css'
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../Firebase.init';
-
+import google from '../../../img/google.png'
+import facebook from '../../../img/facebook.webp'
 const SignUp = () => {
     const navigate = useNavigate()
     const [email, setEmail] = useState('')
@@ -14,32 +15,32 @@ const SignUp = () => {
         user,
         loading,
         error,
-      ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true});
-    
-      if (user) {
+    ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+
+    if (user) {
         navigate('/')
     }
-    
-    const hendelEmail = e =>{
+
+    const hendelEmail = e => {
         setEmail(e.target.value)
     }
-    const hendelPassword = e =>{
+    const hendelPassword = e => {
         setPassword(e.target.value)
     }
-    const hendelName = e =>{
-        
+    const hendelName = e => {
+
     }
-    const HendelSubmit = async e =>{
-        
+    const HendelSubmit = async e => {
+
         e.preventDefault()
-       await createUserWithEmailAndPassword(email,password)
+        await createUserWithEmailAndPassword(email, password)
     }
-    
+
     return (
-        <div className='signUp-form mt-5'>
+        <div className='signUp-form mt-5 from-container'>
             <h1 className='text-center text-primary mb-3'>Create account</h1>
 
-            <form onSubmit={HendelSubmit} className='from-container'>
+            <form onSubmit={HendelSubmit} className=''>
                 <h3 className='text-center text-dark'>SignUp</h3>
 
                 <input onBlur={hendelName} type="text" name="name" id="" placeholder='Your name' />
@@ -48,18 +49,28 @@ const SignUp = () => {
                 <input onBlur={hendelPassword} type="password" name="password" id="" required placeholder='password' />
 
                 <input type="checkbox" name="terms" id="" />
-                
+
                 <label className={`ps-2 `} htmlFor="terms">accept terms of condition</label>
-            
-                    <input type="submit" value="SignUp" />
-               
-                    <>
-                <p className='text-center'>alrady have an account <Link to={'/login'} className='text-primary text-decoration-none' >Pleash Login</Link></p>
-                <button  className='btn btn-warning' >Google</button>
-            </>
+
+                <input type="submit" value="SignUp" />
+
+
             </form>
+            <>
+                <p className='text-center'>alrady have an account <Link to={'/login'} className='text-primary text-decoration-none' >Pleash Login</Link></p>
 
+            </>
 
+            <div className='d-flex justify-content-evenly me-3'>
+                <button className='' >
+                    <img src={google} alt="" />
+                    Google
+                </button>
+                <button className='' >
+                    <img className='facebook' src={facebook} alt="" />
+                    Facebook
+                </button>
+            </div>
         </div>
     );
 };
