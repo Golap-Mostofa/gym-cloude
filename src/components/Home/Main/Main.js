@@ -1,4 +1,4 @@
-import { Carousel } from 'bootstrap';
+
 import React from 'react';
 import TopBanner from '../TopBanner/TopBanner';
 import banner from '../../../img/banner.jpg'

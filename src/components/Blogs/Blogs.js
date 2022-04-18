@@ -6,9 +6,9 @@ const Blogs = () => {
             <h4 className='text-primary'>1. authorization and authentication defference</h4>
             <p>Authentication confirms that users are who they say they are. Authorization gives those users permission to access a resource.
 
-            Authentication is the act of validating that users are whom they claim to be. 
+            Authentication is the act of validating that users are whom they claim to be 
 
-            Passwords. Usernames and passwords are the most common authentication factors. If a user enters the correct data, the system assumes the identity is valid and grants access..
+            Passwords. Usernames and passwords are the most common authentication factors. If a user enters the correct data the system assumes the identity is valid and grants access.
 
             Authorization in system security is the process of giving the user permission to access a specific resource or function. 
             </p>
