@@ -9,7 +9,7 @@ const SignUp = () => {
     const navigate = useNavigate()
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
-    const [name, setName] = useState('')
+    const [err, setName] = useState('')
     const [
         createUserWithEmailAndPassword,
         user,
@@ -47,7 +47,7 @@ const SignUp = () => {
                 <input type="email" name="email" id="" required onBlur={hendelEmail} placeholder='your email' />
 
                 <input onBlur={hendelPassword} type="password" name="password" id="" required placeholder='password' />
-
+                <p>loading{loading}</p>
                 <input type="checkbox" name="terms" id="" />
 
                 <label className={`ps-2 `} htmlFor="terms">accept terms of condition</label>

@@ -19,6 +19,7 @@ const Login = () => {
         lode,
         err,
     ] = useSignInWithEmailAndPassword(auth);
+
     const location = useLocation()
     const from = location.state?.from?.pathname || '/'
     const hendelEmail = e => {
@@ -33,9 +34,9 @@ const Login = () => {
 
     }
 
-    if (user) {
-        navitate('/showalldt')
-        // navitate(from, { replace: true })
+    if (user1) {
+        // navitate('/')
+        navitate(from, { replace: true })
     }
 
     return (
@@ -47,6 +48,7 @@ const Login = () => {
 
                 <input onBlur={hendelEmail} type="email" name="email" id="" required placeholder='your email' />
                 <input onBlur={hendelPassword} type="password" name="password" id="" required placeholder='password' />
+                <p>l{lode}</p>
                 <input type="checkbox" name="terms" id="" />
                 <label className={`ps-2 `} htmlFor="terms">accept terms of condition</label>
 

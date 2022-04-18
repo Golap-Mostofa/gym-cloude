@@ -23,7 +23,8 @@ const Header = () => {
                 
                 <div className='d-flex font-weight-bold'>
                     <Link className='text-decoration-none text-white me-5 font-weight-bold' to='/'>Home</Link>
-                    <Link className='text-decoration-none text-white me-5 font-weight-bold' to='/'>about</Link>
+                    <Link className='text-decoration-none text-white me-5 font-weight-bold' to='/blogs'>Blogs</Link>
+                    <Link className='text-decoration-none text-white me-5 font-weight-bold' to='/about'>about</Link>
                 {user ?
                 
                <button onClick={hendelSignOut}>Sign Out</button>

@@ -9,6 +9,8 @@ import SignUp from './components/Security/SignUp/SignUp';
 import ShowAll from './components/ShowAll/ShowAll';
 import ShoData from './components/ShoData/ShoData';
 import RequAuth from './components/RequAuth/RequAuth';
+import Blogs from './components/Blogs/Blogs';
+import About from './components/About/About';
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
        }></Route>
        <Route path='/showalldt' element={<ShoData></ShoData>}></Route>
        <Route path='/' element={<TopBanner></TopBanner>}></Route>
+       <Route path='/about' element={<About></About>}></Route>
+       <Route path='blogs' element={<Blogs></Blogs>}></Route>
        <Route path='/login' element={<Login></Login>}></Route>
        <Route path='/signup' element={<SignUp></SignUp>}></Route>
      </Routes>
