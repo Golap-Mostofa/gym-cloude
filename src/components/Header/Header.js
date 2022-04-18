@@ -19,6 +19,8 @@ const Header = () => {
                     <img style={{ height: '50px' }} className='ms-3 me-3' src={logo} alt="" />
                     <h4 className='text-success'>Powder - Vediva</h4>
                 </div>
+
+                
                 <div className='d-flex font-weight-bold'>
                     <Link className='text-decoration-none text-white me-5 font-weight-bold' to='/'>Home</Link>
                     <Link className='text-decoration-none text-white me-5 font-weight-bold' to='/'>about</Link>
